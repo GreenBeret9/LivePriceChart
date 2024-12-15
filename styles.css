@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    /* Add a background color to match the chart */
+    background-color: #686565;
+}
+.container {
+    margin: 50px 0 0 0; /* Add space at the top, but keep the left margin at 0 */
+    width: 100%; /* Make it span the full width of the screen */
+    text-align: left; /* Align content to the left */
+    position: relative; /* Add relative positioning */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+.live-price {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+#chart {
+    width: 100%; /* Make the chart span the full width of the container */
+    height: 400px;
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    position: relative; /* Add relative positioning */
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: none;
+    pointer-events: none;
+    z-index: 1000;
+    top: 10px; /* Position from the top of the chart */
+    left: 10px; /* Position from the left of the chart */
+}
